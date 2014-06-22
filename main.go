@@ -3,12 +3,12 @@ package main
 import (
     "fmt"
     "net/http"
-    "os/exec"
+    "os"
 )
 
 func main() {
-    for i := 1; i < len(exec.Args); i++ {
-        getURL := string(exec.Args[i])
+    for i := 1; i < len(os.Args); i++ {
+        getURL := string(os.Args[i])
         resp, err := http.Get(getURL)
         if err != nil {
             fmt.Println(err)
