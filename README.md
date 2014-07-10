@@ -1,5 +1,5 @@
-go-url-lengthener
-=================
+URL Lengthener Microservice (Go)
+================================
 
 Very simple microservice written in Go for lengthening URLs.
 
