@@ -12,7 +12,7 @@ Build binary with all dependencies:
 `CGO_ENABLED=0 go build -a -ldflags '-s' lengthener.go`
 
 Verify with (should show “not a dynamic executable”):
-`ldd binaryfile`
+`ldd lengthener`
 
 Building Dockerfile:
 `docker build -t cloudspace/url-lengthener .``
