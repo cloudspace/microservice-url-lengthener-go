@@ -15,6 +15,6 @@ func main() {
             return
         }
         finalURL := resp.Request.URL.String()
-        fmt.Println(finalURL)
+        fmt.Printf(`{"url":"%s"}` + "\n", finalURL)
     }
 }

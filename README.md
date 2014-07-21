@@ -15,10 +15,13 @@ Verify with (should show “not a dynamic executable”):
 `ldd lengthener`
 
 Building Dockerfile:
-`docker build -t cloudspace/url-lengthener .``
+`docker build -t cloudspace/url-lengthener-go .`
 
 Running Dockerfile:
-`docker run -ti cloudspace/url-lengthener http://domain.com/tinyurl1 http://domain.com/tinyurl2`
+`docker run -ti cloudspace/url-lengthener-g http://domain.com/tinyurl1`
+
+Pushing docker image:
+`docker push cloudspace/url-lengthener-go`
 
 Finding docker images:
 `docker images -a`
